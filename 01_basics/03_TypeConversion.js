@@ -4,8 +4,8 @@ let score = "hitesh"
 //console.log(typeof(score));
 
 let valueInNumber = Number(score)
-//console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+// console.log(typeof valueInNumber);
+// console.log(valueInNumber); // makes it NaN: Not a Numbere
 
 
 // "33" => 33
@@ -18,14 +18,13 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 //  console.log(booleanIsLoggedIn);
 
 // 1 => true; 0 => false
-// "" => false
-// "hitesh" => true
+// "" => false; "hitesh" => true
 
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+// console.log(stringNumber); // looks 33 
+// console.log(typeof stringNumber); // but type is string
 
 // *********************** Operations ***********************
 
@@ -57,7 +56,7 @@ let str3 = str1 + str2
 // console.log(+"");
 
 let num1, num2, num3
-
+// Bad way to write code
 num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
