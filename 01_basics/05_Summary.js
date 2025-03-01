@@ -16,40 +16,70 @@ String name = "John"; // name is a variable of type String
 JavaScript's dynamic typing allows for more flexibility but can lead to potential runtime errors if not handled carefully. Static typing, on the other hand, provides better type safety at the cost of some initial verbosity and strictness.
 */
 
-//  Primitive
+// //  Primitive
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+// //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
-const score = 100
-const scoreValue = 100.3
+// const score = 100
+// const scoreValue = 100.3
 
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail;
+// const isLoggedIn = false
+// const outsideTemp = null
+// console.log(typeof outsideTemp) //null type -> object
+// let userEmail;
 
-const id = Symbol('123')
-const anotherId = Symbol('123')
+// const id = Symbol('123')
+// const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // const bigNumber = 3456543576654356754n
 
 
 
-// Reference (Non primitive)
+// // Reference (Non primitive)
 
-// Array, Objects, Functions
+// // Array, Objects, Functions
 
-const heros = ["shaktiman", "naagraj", "doga"];
-let myObj = {
-    name: "hitesh",
-    age: 22,
-}
+// const heros = ["shaktiman", "naagraj", "doga"];
+// let myObj = {
+//     name: "hitesh",
+//     age: 22,
+// }
 
-const myFunction = function(){
-    console.log("Hello world");
-}
+// const myFunction = function(){
+//     console.log("Hello world");
+// }
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+// Memory in Javascript
+// Stack() -> store primitives | call by value
+// Heap()  -> store non-primitives | call by reference
+
+
+let myYoutubeName = "hitesh choudhary"
+let anotherName = myYoutubeName
+console.log(myYoutubeName);
+console.log(anotherName);
+anotherName = "chaiaurcode"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let userone = {
+    email: "user.google.com",
+    upi: "user.ybl"
+}
+let usertwo = userone
+console.log(userone.email);
+console.log(usertwo.email);
+usertwo.email = "vinayak@google.com"
+console.log(userone.email);
+console.log(usertwo.email);
+
+
