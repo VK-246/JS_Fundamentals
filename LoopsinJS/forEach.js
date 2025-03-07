@@ -24,7 +24,7 @@ const arr = ['cpp','c','python','js','html','css']
 // } )
 
 // For accessing array of js object data type
-// very useful for practical purposes
+// very useful for practical purposes 
 const myCoding = [
     {
         LangName: "Python",
@@ -39,3 +39,5 @@ const myCoding = [
 myCoding.forEach( function(item) {
      console.log(`Language ${item.LangName} has FileName ${item.FileName}`);
  } )
+
+// for each is fine for printing scenarios not for performing operations in loops
