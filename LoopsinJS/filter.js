@@ -3,15 +3,18 @@ const myArr = [1,2,3,4,5,6,7]
 let MyNewArr1 = myArr.forEach( (nums) => (nums>3) )
 let MyNewArr2 = myArr.filter( (nums) => (nums>3) )
 
-// console.log(MyNewArr1);
-// console.log(MyNewArr2);
-// myNums.forEach( (num) => {
-//     if (num > 4) {
-//         newNums.push(num)
-//     }
-// } )
+// console.log(MyNewArr1); //
+// console.log(MyNewArr2); //
 
-// console.log(newNums);
+
+// for each to do same task done using single line filter 
+let newNums = [];
+myArr.forEach( (num) => {
+    if (num > 3) {
+        newNums.push(num)
+    }
+} )
+console.log(newNums);
 
 
 const books = [
@@ -27,7 +30,12 @@ const books = [
   ];
 
   
-const NewBooks = books.filter( (item) => (item.publish > 2000) )
-console.log(NewBooks);
+// const NewBooks = books.filter( (item) => (item.publish > 2000) )
+// console.log(NewBooks);
+const FicBooks = books.filter( (item) => ( (item.genre = 'Fiction') && item.publish > 1995 ) )
+for (const item of FicBooks) {
+  console.log(item.title);
+}
+
 
 

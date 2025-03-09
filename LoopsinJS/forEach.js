@@ -40,4 +40,4 @@ myCoding.forEach( function(item) {
      console.log(`Language ${item.LangName} has FileName ${item.FileName}`);
  } )
 
-// for each is fine for printing scenarios not for performing operations in loops
+// for each is fine for printing scenarios
