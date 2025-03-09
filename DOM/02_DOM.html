@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="parent">
+        <div class = "days">"Monday"</div>
+        <div class = "days">"Tuesday"</div>
+        <div class = "days">"Wednesday"</div>
+        <div class = "days">"Thrusday"</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('#parent')
+    console.log(parent);
+    console.log(parent.children); // gives HTMLCollection
+    console.log(parent.children[1].innerText);
+    
+    for (let index = 0; index < parent.children.length; index++) {
+        console.log(parent.children[index].innerText);  
+        parent.children[index].style.backgroundColor = "azure"
+    }
+
+    // console.log(parent.firstElementChild);//monday
+    // console.log(parent.lastElementChild);//thrusday
+    // console.log(parent.querySelector('.day'));//monday
+    const dayOne = parent.querySelector('.day')
+    console.log(dayOne.nextElementSibling);//tuesday
+     
+
+    
+    
+</script>
+</html>
