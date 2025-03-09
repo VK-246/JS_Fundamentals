@@ -14,7 +14,32 @@
 <body class="bg">
     <div >
         <h1 id="title" class="heading">Targeting Elements through JS</h1>
-        <p>This is a sample codespace.</p>
+        <p>Learning to target elements through JS.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        
+        <ul>
+            <li>DOM Selectors</li>
+            <li>NodeList</li>
+            <li>HTML Collection</li>
+        </ul>
     </div>
+
+    <div>
+        <p>Console scripting is about accessing elements from the webpage and manipulate them</p>
+        <p>
+            1. document: keyword refering to current webpage
+            2. document.getElementById("ID")
+            3.1. document.getElementByClass("CLASS")
+            3.2. const List = document.getElementByClass("CLASS") : Stores values in HTMLCollection
+            3.3 HTMLCollections can be converted into array by Array.from(List)
+            4.1. document.querySelector('Tag/.Class/#Id')
+            4.2. const TempList = document.querySelector('Tag/.Class/#Id') : Stores Elements in NodeList
+            4.3. NodeList has forEach method to iterate
+        </p>
+    </div>
+
+
 </body>
 </html>
