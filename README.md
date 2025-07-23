@@ -4,64 +4,17 @@
 
 ### 📖 Topics Covered  
 
-📘 1 & 2. Variables and Data Types in JavaScript
-Variable Declarations:
+📘1&2.Variables&DataTypes:var=fn-scoped,use is risky;let,const=block-scoped,preferred;const=fixed values;JS is dynamically typed;"use strict" for modern JS;refs:tc39,MDN;Types:Number(up to 2^53),BigInt,String,Boolean,Null,Undefined,Symbol;typeof null="object",typeof undefined="undefined".
 
-var: Function-scoped, avoid using due to hoisting and global access issues.
+📗3.TypeConversion&Operations:String→Number:"33"→33,"33abc"→NaN;String→Boolean:""→false,"hitesh"→true;Number→String:33→"33";Arithmetic:+,-,*,/,%,**,unary -;String concat:"1"+2+2≠1+2+"2";Implicit conversion:+true=1,+""=0;Chained assignment:num1=num2=2+2;++counter increases value.
 
-let & const: Block-scoped, safer and preferred.
+📙4.Comparisons:==does type coercion,===checks value+type;"2"==2 true,"2"===2 false;"2">1,true;"02">1,true;null>=0→true,null==0→false;undefined==0,false;undefined<0,false;undefined>0,false;avoid==with null/undefined;strict comparison preferred.
 
-const: For values that don’t change.
+📕5.DynamicallyTypedLang:JS types set at runtime;let x=10→x="hi"→x=true allowed;vs statically typed langs(Java,C++) with fixed types and compile-time checks;JS is flexible but riskier at runtime.
 
-JS is dynamically typed – no need to declare types explicitly.
+📒6.Primitive&Non-PrimitiveTypes:Primitives=String,Number,Boolean,null,undefined,Symbol,BigInt;typeof null="object",Symbol('123')!==Symbol('123');bigint has n suffix;Non-Primitives=Array,Object,Function;typeof array/object="object",typeof function="function".
 
-"use strict" enforces modern JS syntax.
-
-Standard references: tc39 (ECMA) and MDN Docs.
-
-Primitive Data Types:
-
-Number (up to 2^53), BigInt, String, Boolean, Null, Undefined, Symbol
-typeof undefined // "undefined"
-typeof null      // "object" (known quirk in JS)
-
-  ### 3 Type Conversion & Operations in JavaScript
-This script demonstrates type conversion and basic operations in JavaScript:
-
- Type Conversion:
-
-String ➝ Number: "33" becomes 33, "33abc" becomes NaN
-
-String ➝ Boolean: "" is false, any non-empty string (e.g., "hitesh") is true
-
-Number ➝ String: 33 becomes "33"
-
-➕ Basic Arithmetic & String Operations:
-
-Arithmetic: +, -, *, /, %, ** (power), unary -
-
-String concatenation and operator precedence shown with "1" + 2 + 2 vs 1 + 2 + "2"
-
-⚠️ Implicit Conversion:
-
-Use of +true and +"" to demonstrate coercion to numbers
-
-Multiple assignments (num1 = num2 = num3 = 2 + 2) and increment operators (++gameCounter)
-
-🔗 Reference: ECMAScript Type Conversion
-
-###4 JavaScript Comparisons
-== allows type conversion, === checks both value and type.
-
-"2" == 2 is true, but "2" === 2 is false.
-
-In comparisons:
-"2" > 1 → true
-"02" > 1 → true
-null >= 0 → true (null converts to 0)
-null == 0 → false (equality has different rules)
-undefined == 0, undefined > 0, undefined < 0 → all false
-Note: Avoid loose comparisons (==) with null and undefined—can cause bugs.
+📓7.MemoryManagement:Primitives in Stack(call by value);Non-Primitives in Heap(call by reference);copying primitive var creates new value;copying object shares reference;changing one affects both.
 
 #### 25 JavaScript Execution Behind the Scenes  
 - Understanding the execution process:  
