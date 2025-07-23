@@ -4,6 +4,12 @@
 
 ### 📖 Topics Covered  
 
+### 1 Variables in JS 
+  - using let, const and var.
+  - var creates variables accessible to entire document, so use is not recommended as value can be changed from anywhere.
+  - let and const are block/functional scoped.
+  - JS is runtime languagee, no explicit declaration of data types needed.
+
 #### 25 JavaScript Execution Behind the Scenes  
 - Understanding the execution process:  
   - 🌍 **Global Execution Context**  
