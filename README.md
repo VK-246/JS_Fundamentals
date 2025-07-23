@@ -4,17 +4,51 @@
 
 ### 📖 Topics Covered  
 
-### 1 Variables in JS 
-  - using let, const and var.
-  - var creates variables accessible to entire document, so use is not recommended as value can be changed from anywhere.
-  - let and const are block/functional scoped.
-  - JS is runtime languagee, no explicit declaration of data types needed.
-  - "use strict"; //treat all JS code as newer version.
-  - tc39 -> ECMA standards for javascript & mdn
-  - numbers : 2^53 , bigint , string , boolean , null , undefined , symbol 
-console.log(typeof(undefined)); //undefined is undefined
-console.log(typeof(null)); //null is an object
-          
+📘 1 & 2. Variables and Data Types in JavaScript
+Variable Declarations:
+
+var: Function-scoped, avoid using due to hoisting and global access issues.
+
+let & const: Block-scoped, safer and preferred.
+
+const: For values that don’t change.
+
+JS is dynamically typed – no need to declare types explicitly.
+
+"use strict" enforces modern JS syntax.
+
+Standard references: tc39 (ECMA) and MDN Docs.
+
+Primitive Data Types:
+
+Number (up to 2^53), BigInt, String, Boolean, Null, Undefined, Symbol
+typeof undefined // "undefined"
+typeof null      // "object" (known quirk in JS)
+
+  ### 3 Type Conversion & Operations in JavaScript
+This script demonstrates type conversion and basic operations in JavaScript:
+
+ Type Conversion:
+
+String ➝ Number: "33" becomes 33, "33abc" becomes NaN
+
+String ➝ Boolean: "" is false, any non-empty string (e.g., "hitesh") is true
+
+Number ➝ String: 33 becomes "33"
+
+➕ Basic Arithmetic & String Operations:
+
+Arithmetic: +, -, *, /, %, ** (power), unary -
+
+String concatenation and operator precedence shown with "1" + 2 + 2 vs 1 + 2 + "2"
+
+⚠️ Implicit Conversion:
+
+Use of +true and +"" to demonstrate coercion to numbers
+
+Multiple assignments (num1 = num2 = num3 = 2 + 2) and increment operators (++gameCounter)
+
+🔗 Reference: ECMAScript Type Conversion
 
 #### 25 JavaScript Execution Behind the Scenes  
 - Understanding the execution process:  
