@@ -50,6 +50,19 @@ Multiple assignments (num1 = num2 = num3 = 2 + 2) and increment operators (++gam
 
 🔗 Reference: ECMAScript Type Conversion
 
+###4 JavaScript Comparisons
+== allows type conversion, === checks both value and type.
+
+"2" == 2 is true, but "2" === 2 is false.
+
+In comparisons:
+"2" > 1 → true
+"02" > 1 → true
+null >= 0 → true (null converts to 0)
+null == 0 → false (equality has different rules)
+undefined == 0, undefined > 0, undefined < 0 → all false
+Note: Avoid loose comparisons (==) with null and undefined—can cause bugs.
+
 #### 25 JavaScript Execution Behind the Scenes  
 - Understanding the execution process:  
   - 🌍 **Global Execution Context**  
