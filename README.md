@@ -9,6 +9,12 @@
   - var creates variables accessible to entire document, so use is not recommended as value can be changed from anywhere.
   - let and const are block/functional scoped.
   - JS is runtime languagee, no explicit declaration of data types needed.
+  - "use strict"; //treat all JS code as newer version.
+  - tc39 -> ECMA standards for javascript & mdn
+  - numbers : 2^53 , bigint , string , boolean , null , undefined , symbol 
+console.log(typeof(undefined)); //undefined is undefined
+console.log(typeof(null)); //null is an object
+          
 
 #### 25 JavaScript Execution Behind the Scenes  
 - Understanding the execution process:  
