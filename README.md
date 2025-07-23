@@ -10,11 +10,10 @@
 
 📙4.Comparisons:==does type coercion,===checks value+type;"2"==2 true,"2"===2 false;"2">1,true;"02">1,true;null>=0→true,null==0→false;undefined==0,false;undefined<0,false;undefined>0,false;avoid==with null/undefined;strict comparison preferred.
 
-📕5.DynamicallyTypedLang:JS types set at runtime;let x=10→x="hi"→x=true allowed;vs statically typed langs(Java,C++) with fixed types and compile-time checks;JS is flexible but riskier at runtime.
-
-📒6.Primitive&Non-PrimitiveTypes:Primitives=String,Number,Boolean,null,undefined,Symbol,BigInt;typeof null="object",Symbol('123')!==Symbol('123');bigint has n suffix;Non-Primitives=Array,Object,Function;typeof array/object="object",typeof function="function".
-
-📓7.MemoryManagement:Primitives in Stack(call by value);Non-Primitives in Heap(call by reference);copying primitive var creates new value;copying object shares reference;changing one affects both.
+📕5.DynamicallyTypedLang:
+- JS types set at runtime;let x=10→x="hi"→x=true allowed;vs statically typed langs(Java,C++) with fixed types and compile-time checks;JS is flexible but riskier at runtime.
+- Primitive&Non-PrimitiveTypes:Primitives=String,Number,Boolean,null,undefined,Symbol,BigInt;typeof null="object",Symbol('123')!==Symbol('123');bigint has n suffix;Non-Primitives=Array,Object,Function;typeof array/object="object",typeof function="function".
+- MemoryManagement:Primitives in Stack(call by value);Non-Primitives in Heap(call by reference);copying primitive var creates new value;copying object shares reference;changing one affects both.
 
 #### 25 JavaScript Execution Behind the Scenes  
 - Understanding the execution process:  
